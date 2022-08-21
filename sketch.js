@@ -24,7 +24,7 @@ function preload() {
   diverImg = loadImage("images/obs2.png");
   whaleImg = loadImage("images/obs1.png");
   startImg = loadImage("images/1120358.jpg");
-  playImg=loadImage("images/Play.jpg");
+  playImg=loadImage("images/Play.png");
   gameOverImg=loadImage("images/over.png")
 }
 
@@ -38,8 +38,9 @@ function setup() {
   gameOver = createSprite(windowWidth/2, windowHeight/2,10,10);
   gameOver.addImage(gameOverImg);
   
-  play = createSprite(windowWidth/2, windowHeight/2, 20,20);
+  play = createSprite(windowWidth/2, windowHeight/1.25, 20,20);
   play.addImage(playImg);
+  play.scale=0.5;
 
   sea.velocityX = -20;
   submarine = createSprite(windowWidth / 6, windowHeight / 2, 5, 5);
